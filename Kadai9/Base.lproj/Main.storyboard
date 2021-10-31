@@ -89,7 +89,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="東京都"/>
                                 <connections>
                                     <action selector="inputTokyoButton:" destination="bv0-bw-8lw" eventType="touchUpInside" id="bB6-sf-qiU"/>
-                                    <segue destination="3PJ-Eb-O8K" kind="unwind" unwindAction="exitInputWithSegue:" id="rUS-Nf-XX1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIu-er-ZbS">
@@ -102,7 +101,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="神奈川県"/>
                                 <connections>
                                     <action selector="inputKanagawaButton:" destination="bv0-bw-8lw" eventType="touchUpInside" id="3QT-KO-8at"/>
-                                    <segue destination="3PJ-Eb-O8K" kind="unwind" unwindAction="exitInputWithSegue:" id="sOq-cc-VfU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqW-ql-m6L">
@@ -115,7 +113,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="埼玉県"/>
                                 <connections>
                                     <action selector="inputSaitamaButton:" destination="bv0-bw-8lw" eventType="touchUpInside" id="pfR-Re-qRj"/>
-                                    <segue destination="3PJ-Eb-O8K" kind="unwind" unwindAction="exitInputWithSegue:" id="50S-BJ-gRX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3f-gK-GPs">
@@ -128,7 +125,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="千葉県"/>
                                 <connections>
                                     <action selector="inputChibaButton:" destination="bv0-bw-8lw" eventType="touchUpInside" id="uID-cU-XEw"/>
-                                    <segue destination="3PJ-Eb-O8K" kind="unwind" unwindAction="exitInputWithSegue:" id="xge-PL-S2F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,6 +150,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="3PJ-Eb-O8K" kind="unwind" identifier="exitInput" unwindAction="exitInputWithSegue:" id="QZ7-pi-CQh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUa-f2-G5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3PJ-Eb-O8K" userLabel="Exit" sceneMemberID="exit"/>

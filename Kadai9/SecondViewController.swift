@@ -8,22 +8,30 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    var inputAreaText = ""
+    private(set) var selectedPrefectureName: String?
 
     // 東京
     @IBAction private func inputTokyoButton(_ sender: Any) {
-        inputAreaText = "東京都"
+        exit(name: "東京都")
     }
+
     // 神奈川
     @IBAction private func inputKanagawaButton(_ sender: Any) {
-        inputAreaText = "神奈川県"
+        exit(name: "神奈川県")
     }
+
     // 埼玉
     @IBAction private func inputSaitamaButton(_ sender: Any) {
-        inputAreaText = "埼玉県"
+        exit(name: "埼玉県")
     }
+
     // 千葉
     @IBAction private func inputChibaButton(_ sender: Any) {
-        inputAreaText = "千葉県"
+        exit(name: "千葉県")
+    }
+
+    private func exit(name: String) {
+        selectedPrefectureName = name
+        performSegue(withIdentifier: "exitInput", sender: nil)
     }
 }
