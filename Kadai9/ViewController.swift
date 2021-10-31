@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBAction private func exitInput(segue: UIStoryboardSegue) {
         // swiftlint:disable:next force_cast
         let next = segue.source as! SecondViewController
-        self.selectionLabel.text = next.inputAreaText
+        selectionLabel.text = next.selectedPrefectureName
     }
 
     @IBAction private func exitCancel(segue: UIStoryboardSegue) {
